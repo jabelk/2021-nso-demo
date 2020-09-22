@@ -1,4 +1,4 @@
-** Setting up NSO **
+## Setting up NSO 
 
 ncs-setup --package nso/packages/neds/cisco-ios-cli-6.44 \
 --package nso/packages/neds/cisco-nx-cli-5.15 \
@@ -12,7 +12,7 @@ ncs
 (wait 60-90 seconds)
 
 
-** Populating your NSO instance **
+## Populating your NSO instance 
 
 ncs_cli -C -u admin
 
@@ -132,7 +132,7 @@ device-group XR-DEVICES
 
 
 
-devices device-group IOS-DEVICES check-sync	
+devices device-group IOS-DEVICES check-sync 
 
 exit
 
@@ -149,33 +149,33 @@ exit
 ncs_cli -C -u admin
 devices device-group IOS-DEVICES check-sync
 
-** error **
+## error 
 
 devices device-group IOS-DEVICES sync-from dry-run
 
-** find the error **
+## find the error 
 
 devices device-group IOS-DEVICES sync-from
 
 show running-config devices device internet-rtr01 config interface
 
-** see the new loopback **
+## see the new loopback 
 
-** Exploring the network with the NSO CLI **
+## Exploring the network with the NSO CLI 
 
 show running-config devices device internet-rtr01 config
 
-** explain each step of the hierarchy **
+## explain each step of the hierarchy 
 
 show running-config devices device internet-rtr01 config interface
 show running-config devices device internet-rtr01 config interface | display json
 show running-config devices device internet-rtr01 config interface | display xml
  
-** explain NED parsing, not using NETCONF **
+## explain NED parsing, not using NETCONF 
 
 
 
-** Updating device configuration **
+## Updating device configuration 
 
 switch cli
 show configuration devices device internet-rtr01 config interface
@@ -203,11 +203,11 @@ interface GigabitEthernet ?
 interface GigabitEthernet 3
 ip address ? 
 
-** existing one is there **
+## existing one is there 
 
 ip address 172.64.0.1 ?
 
-** existing mask is there **
+## existing mask is there 
 
 ip address 172.64.0.1 255.255.255.0
 exit
@@ -222,7 +222,7 @@ show configuration
 show configuration | display xml
 commit dry-run outformat native
 
-** adds in the no shutdown for me **
+## adds in the no shutdown for me 
 commit
 
 show configuration rollback changes
@@ -234,7 +234,7 @@ commit
 end
 
 
-** Templates and live status **
+## Templates and live status 
 
 devices template SET-DNS-SERVER
 ! IOS TEMPLATE
@@ -281,9 +281,9 @@ commit
 devices device-group ALL apply-template template-name SET-DNS-SERVER
 commit dry-run outformat native
 
-** only new server is present, doesn't remove old server **
+## only new server is present, doesn't remove old server 
 
-** take out config  templates **
+## take out config  templates 
 rollback configuration 10019
 admin@ncs(config)# show configuration
 no devices template SET-DNS-SERVER
@@ -369,7 +369,7 @@ dns-servers 5th-instance device edge-sw01 community-string MY-NFD-COMM-STRING
 top
 dns-servers 6th-instance device internet-rtr01 community-string MY-NFD-COMM-STRING
 
-** where are the variables stored? CDB **
+## where are the variables stored? CDB 
 
 show running-config dns-servers
 
@@ -377,7 +377,7 @@ show running-config dns-servers
 
 
 
-** operational state **
+## operational state 
 
 show devices device internet-rtr01 platform
 show devices device internet-rtr01 platform serial-number
