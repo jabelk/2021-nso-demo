@@ -1,14 +1,13 @@
 ## Setting up NSO 
 
 ncs-setup --package nso/packages/neds/cisco-ios-cli-6.44 \
---package nso/packages/neds/cisco-nx-cli-5.15 \
 --package nso/packages/neds/cisco-iosxr-cli-7.20 \
 --package nso/packages/neds/cisco-asa-cli-6.8 \
 --dest nso-instance
 
 cd ~/nso-instance
 ncs
-
+ 
 (wait 60-90 seconds)
 
 
@@ -98,12 +97,28 @@ state admin-state unlocked
 trace raw
 !
 commit
+config
+devices device-group IOS-DEVICES
+device-name internet-rtr01
+device-name dist-rtr01
+device-name dist-rtr02
+devices device-group XR-DEVICES
+device-name core-rtr01
+device-name core-rtr02
+devices device-group ASA-DEVICES
+device-name edge-firewall01
+devices device-group ALL
+device-group ASA-DEVICES
+device-group IOS-DEVICES
+device-group XR-DEVICES
+commit
+
 
 end
 
-
-devices connect
 show devices list
+devices connect
+
 
 show running-config devices device dist-rtr01 config
 
@@ -130,6 +145,7 @@ device-group ASA-DEVICES
 device-group IOS-DEVICES
 device-group XR-DEVICES
 
+show devices device-group member
 
 
 devices device-group IOS-DEVICES check-sync 
@@ -177,25 +193,7 @@ show running-config devices device internet-rtr01 config interface | display xml
 
 ## Updating device configuration 
 
-switch cli
-show configuration devices device internet-rtr01 config interface
-switch cli
-
-
-
-  interface GigabitEthernet3
-   description to enp0s2.internet-host01
-   no switchport
-   negotiation auto
-   no mop enabled
-   no mop sysid
-   ip address 172.31.0.1 255.255.255.0
-   no shutdown
-
-
-look at trace
-/home/developer/nso-instance/logs/ned-cisco-ios-cli-6.44-internet-rtr01.trace
-internet-rtr01(config-if)
+show running-config devices device internet-rtr01 config interface GigabitEthernet 3
 
 config
 devices device internet-rtr01 config ?
@@ -234,6 +232,11 @@ commit
 end
 
 
+look at trace
+/home/developer/nso-instance/logs/ned-cisco-ios-cli-6.44-internet-rtr01.trace
+internet-rtr01(config-if)
+
+
 ## Templates and live status 
 
 devices template SET-DNS-SERVER
@@ -247,7 +250,6 @@ exit
 exit
 
 ! ASA TEMPLATE
-! 3 exits to return back to the 'config-template-SET-DNS-SERVER' context
 ned-id cisco-asa-cli-6.8
 config
 dns domain-lookup mgmt
@@ -269,22 +271,22 @@ devices device-group ALL apply-template template-name SET-DNS-SERVER
 commit dry-run outformat native
 commit
 
+!!!!take out
+            devices template SET-DNS-SERVER
+            ned-id cisco-ios-cli-6.44
+            config
+            no ip name-server name-server-list 208.67.222.222
+            ip name-server name-server-list 208.67.222.111
+            top
+            commit dry-run
+            commit
+            devices device-group ALL apply-template template-name SET-DNS-SERVER
+            commit dry-run outformat native
 
-devices template SET-DNS-SERVER
-ned-id cisco-ios-cli-6.44
-config
-no ip name-server name-server-list 208.67.222.222
-ip name-server name-server-list 208.67.222.111
-top
-commit dry-run
-commit
-devices device-group ALL apply-template template-name SET-DNS-SERVER
-commit dry-run outformat native
-
-## only new server is present, doesn't remove old server 
+!!## only new server is present, doesn't remove old server 
 
 ## take out config  templates 
-rollback configuration 10019
+rollback configuration 
 admin@ncs(config)# show configuration
 no devices template SET-DNS-SERVER
 devices device core-rtr01
@@ -294,19 +296,20 @@ devices device core-rtr01
 ncs-make-package --service-skeleton template  dns-servers
 
 
+! only demo first one
 
 devices device internet-rtr01 config
 snmp-server community VARIABLE-TO-BE RO
 commit dry-run outformat xml
 
-devices device edge-firewall01 config
-snmp-server community secret
-commit dry-run
-snmp-server community VARIABLE-GOES-HERE
-snmp-server enable
+      devices device edge-firewall01 config
+      snmp-server community secret
+      commit dry-run
+      snmp-server community VARIABLE-GOES-HERE
+      snmp-server enable
 
-devices device core-rtr01 config
-snmp-server community VARIABLE-TO-BE RO
+      devices device core-rtr01 config
+      snmp-server community VARIABLE-TO-BE RO
 
 
 <snmp-server xmlns="urn:ios">
@@ -333,10 +336,12 @@ snmp-server community VARIABLE-TO-BE RO
   </community>
 </snmp-server>
 
-
+cd /home/developer/nso-instance/packages/dns-servers/src
+make
+ncs_cli -C -u admin
 packages reload
 
-
+conf
 dns-servers 1st-instance device core-rtr01
 top
 dns-servers 2nd-instance device core-rtr02
@@ -348,26 +353,67 @@ top
 dns-servers 5th-instance device edge-sw01
 top
 dns-servers 6th-instance device internet-rtr01
-commit dry-run
 commit dry-run outformat native
 top
 
 
-change template to have yang
+!change template to have yang
+
+    leaf community-string {
+      type string;
+    }
+
+!change template to include variables
+
+
+<snmp-server xmlns="urn:ios">
+  <community>
+    <name>{/community-string}</name>
+    <RO/>
+  </community>
+</snmp-server>
+
+<snmp-server xmlns="http://cisco.com/ned/asa">
+  <community>
+    <secret>{/community-string}</secret>
+  </community>
+  <enable-conf>
+    <enable>true</enable>
+  </enable-conf>
+</snmp-server>
+
+
+<snmp-server xmlns="http://tail-f.com/ned/cisco-ios-xr">
+  <community>
+    <name>{/community-string}</name>
+    <RW/>
+  </community>
+</snmp-server>
+
+
+
+
 make
 packages reload
 
-dns-servers 1st-instance device core-rtr01 community-string MY-NFD-COMM-STRING
+conf
+dns-servers 1st-instance device core-rtr01 community-string MY-NFD-COMM-STRING-XR
 top
-dns-servers 2nd-instance device core-rtr02 community-string MY-NFD-COMM-STRING
+dns-servers 2nd-instance device core-rtr02 community-string MY-NFD-COMM-STRING-XR
 top
-dns-servers 3rd-instance device dist-rtr01 community-string MY-NFD-COMM-STRING
+dns-servers 3rd-instance device dist-rtr01 community-string MY-NFD-COMM-STRING-IOS
 top
-dns-servers 4th-instance device edge-firewall01 community-string MY-NFD-COMM-STRING
+dns-servers 4th-instance device edge-firewall01 community-string MY-NFD-COMM-STRING-ASA
 top
-dns-servers 5th-instance device edge-sw01 community-string MY-NFD-COMM-STRING
+dns-servers 5th-instance device edge-sw01 community-string MY-NFD-COMM-STRING-IOS
 top
-dns-servers 6th-instance device internet-rtr01 community-string MY-NFD-COMM-STRING
+dns-servers 6th-instance device internet-rtr01 community-string MY-NFD-COMM-STRING-IOS
+commit dry-run outformat native
+
+
+commit
+end
+
 
 ## where are the variables stored? CDB 
 
@@ -384,7 +430,7 @@ show devices device internet-rtr01 platform serial-number
 
 show devices device * platform
 
-Note: In this case the actual serial number for the IOS-XR platform is N/A
+! Note: In this case the actual serial number for the IOS-XR platform is N/A
 
 
 show devices device * platform version
