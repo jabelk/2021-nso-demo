@@ -1,5 +1,7 @@
 ## Setting up NSO 
 
+https://youtu.be/nSz16ngdsG0?t=62
+
 ncs-setup --package nso/packages/neds/cisco-ios-cli-6.44 \
 --package nso/packages/neds/cisco-iosxr-cli-7.20 \
 --package nso/packages/neds/cisco-asa-cli-6.8 \
@@ -97,7 +99,6 @@ state admin-state unlocked
 trace raw
 !
 commit
-config
 devices device-group IOS-DEVICES
 device-name internet-rtr01
 device-name dist-rtr01
@@ -116,36 +117,25 @@ commit
 
 end
 
+https://youtu.be/nSz16ngdsG0?t=62
+! START HERE
+
+
 show devices list
+show devices device-group member
 devices connect
 
 
-show running-config devices device dist-rtr01 config
-
+show running-config devices device internet-rtr01
 devices sync-from
 
-show running-config devices device dist-rtr01 config
+show running-config devices device internet-rtr01
 
 check trace - what other automation considers important, NSO considers a log file
 /home/developer/nso-instance/logs/ned-cisco-ios-cli-6.44-internet-rtr01.trace
 
 
-config
-devices device-group IOS-DEVICES
-device-name internet-rtr01
-device-name dist-rtr01
-device-name dist-rtr02
-devices device-group XR-DEVICES
-device-name core-rtr01
-device-name core-rtr02
-devices device-group ASA-DEVICES
-device-name edge-firewall01
-devices device-group ALL
-device-group ASA-DEVICES
-device-group IOS-DEVICES
-device-group XR-DEVICES
 
-show devices device-group member
 
 
 devices device-group IOS-DEVICES check-sync 
@@ -163,11 +153,16 @@ end
 exit
 
 ncs_cli -C -u admin
-devices device-group IOS-DEVICES check-sync
+devices check-sync
 
 ## error 
 
-devices device-group IOS-DEVICES sync-from dry-run
+devices sync-from dry-run
+
+! j-style CLI
+switch cli
+show configuration devices device internet-rtr01 config interface
+switch cli
 
 ## find the error 
 
@@ -218,7 +213,6 @@ exit
 top
 show configuration
 show configuration | display xml
-commit dry-run outformat native
 
 ## adds in the no shutdown for me 
 commit
@@ -227,7 +221,6 @@ show configuration rollback changes
 
 rollback configuration
 
-commit dry-run outformat native
 commit
 end
 
@@ -271,37 +264,27 @@ devices device-group ALL apply-template template-name SET-DNS-SERVER
 commit dry-run outformat native
 commit
 
-!!!!take out
-            devices template SET-DNS-SERVER
-            ned-id cisco-ios-cli-6.44
-            config
-            no ip name-server name-server-list 208.67.222.222
-            ip name-server name-server-list 208.67.222.111
-            top
-            commit dry-run
-            commit
-            devices device-group ALL apply-template template-name SET-DNS-SERVER
-            commit dry-run outformat native
-
-!!## only new server is present, doesn't remove old server 
+ 
 
 ## take out config  templates 
+
 rollback configuration 
-admin@ncs(config)# show configuration
-no devices template SET-DNS-SERVER
-devices device core-rtr01
- config
+show configuration
+
+! removes template being applied
+
+## Service template - templates with variables
+
+ncs-make-package --service-skeleton template  snmp-servers
 
 
-ncs-make-package --service-skeleton template  dns-servers
-
-
-! only demo first one
+## only demo first one
 
 devices device internet-rtr01 config
 snmp-server community VARIABLE-TO-BE RO
 commit dry-run outformat xml
 
+## not needed
       devices device edge-firewall01 config
       snmp-server community secret
       commit dry-run
@@ -336,34 +319,37 @@ commit dry-run outformat xml
   </community>
 </snmp-server>
 
-cd /home/developer/nso-instance/packages/dns-servers/src
+cd /home/developer/nso-instance/packages/snmp-servers/src
 make
 ncs_cli -C -u admin
 packages reload
 
 conf
-dns-servers 1st-instance device core-rtr01
+snmp-servers 1st-instance device core-rtr01
 top
-dns-servers 2nd-instance device core-rtr02
+snmp-servers 2nd-instance device core-rtr02
 top
-dns-servers 3rd-instance device dist-rtr01
+snmp-servers 3rd-instance device dist-rtr01
 top
-dns-servers 4th-instance device edge-firewall01
+snmp-servers 4rd-instance device dist-rtr02
 top
-dns-servers 5th-instance device edge-sw01
+snmp-servers 5th-instance device edge-firewall01
 top
-dns-servers 6th-instance device internet-rtr01
+snmp-servers 6th-instance device edge-sw01
+top
+snmp-servers 7th-instance device internet-rtr01
 commit dry-run outformat native
 top
 
 
-!change template to have yang
+
+## change template to have yang
 
     leaf community-string {
       type string;
     }
 
-!change template to include variables
+## change template to include variables
 
 
 <snmp-server xmlns="urn:ios">
@@ -397,17 +383,19 @@ make
 packages reload
 
 conf
-dns-servers 1st-instance device core-rtr01 community-string MY-NFD-COMM-STRING-XR
+snmp-servers 1st-instance device core-rtr01 community-string MY-NFD-COMM-STRING-XR
 top
-dns-servers 2nd-instance device core-rtr02 community-string MY-NFD-COMM-STRING-XR
+snmp-servers 2nd-instance device core-rtr02 community-string MY-NFD-COMM-STRING-XR
 top
-dns-servers 3rd-instance device dist-rtr01 community-string MY-NFD-COMM-STRING-IOS
+snmp-servers 3rd-instance device dist-rtr01 community-string MY-NFD-COMM-STRING-IOS
 top
-dns-servers 4th-instance device edge-firewall01 community-string MY-NFD-COMM-STRING-ASA
+snmp-servers 4rd-instance device dist-rtr02 community-string MY-NFD-COMM-STRING-IOS
 top
-dns-servers 5th-instance device edge-sw01 community-string MY-NFD-COMM-STRING-IOS
+snmp-servers 5th-instance device edge-firewall01 community-string MY-NFD-COMM-STRING-ASA
 top
-dns-servers 6th-instance device internet-rtr01 community-string MY-NFD-COMM-STRING-IOS
+snmp-servers 6th-instance device edge-sw01 community-string MY-NFD-COMM-STRING-IOS
+top
+snmp-servers 7th-instance device internet-rtr01 community-string MY-NFD-COMM-STRING-IOS
 commit dry-run outformat native
 
 
@@ -417,11 +405,13 @@ end
 
 ## where are the variables stored? CDB 
 
-show running-config dns-servers
+show running-config snmp-servers
+show running-config devices device internet-rtr01 config | display service-meta-data
 
 
 
 
+!42 min here
 
 ## operational state 
 
