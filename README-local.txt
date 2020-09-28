@@ -2,13 +2,10 @@
 
 https://youtu.be/nSz16ngdsG0?t=62
 
-ncs-setup --package nso/packages/neds/cisco-ios-cli-6.44 \
---package nso/packages/neds/cisco-iosxr-cli-7.20 \
---package nso/packages/neds/cisco-asa-cli-6.8 \
---dest nso-instance
 
-cd ~/nso-instance
-ncs
+ln -s $HOME/nso-install/packages/neds/cisco-iosxr-cli-7.18 cisco-iosxr-cli-7.18
+ln -s $HOME/nso-install/packages/neds/cisco-asa-cli-6.7 cisco-asa-cli-6.7
+ncs-netsim start
  
 (wait 60-90 seconds)
 
@@ -17,87 +14,54 @@ ncs
 
 ncs_cli -C -u admin
 
-conf
-devices authgroups group labadmin
-default-map remote-name cisco
-default-map remote-password cisco
-default-map remote-secondary-password cisco
-commit
+devices device edge-sw01
+address 127.0.0.1 port 10022
+device-type cli ned-id cisco-ios-cli-6.42
+ssh host-key-verification none
+authgroup default
+state admin-state unlocked
 top
-
-
-devices device edge-sw01
-address 10.10.20.172
-authgroup labadmin
-device-type cli ned-id cisco-ios-cli-6.44
-device-type cli protocol telnet
-ssh host-key-verification none
-trace raw
 devices device core-rtr01
-address   10.10.20.173
+address 127.0.0.1 port 10026
+device-type cli ned-id cisco-iosxr-cli-7.18
 ssh host-key-verification none
-authgroup labadmin
-device-type cli ned-id cisco-iosxr-cli-7.20
-device-type cli protocol telnet
+authgroup default
 state admin-state unlocked
-trace raw
-!
+exit
 devices device core-rtr02
-address   10.10.20.174
-ssh host-key-verification none
-authgroup labadmin
-device-type cli ned-id cisco-iosxr-cli-7.20
-device-type cli protocol telnet
 state admin-state unlocked
-trace raw
-!
+ssh host-key-verification none
+device-type cli ned-id cisco-iosxr-cli-7.18
+address 127.0.0.1 port 10027
+authgroup default
+exit
 devices device dist-rtr01
-address   10.10.20.175
-ssh host-key-verification none
-authgroup labadmin
-device-type cli ned-id cisco-ios-cli-6.44
-device-type cli protocol telnet
+address 127.0.0.1 port 10023
 state admin-state unlocked
-trace raw
-!
+ssh host-key-verification none
+device-type cli ned-id cisco-ios-cli-6.42
+authgroup default
+exit
 devices device dist-rtr02
-address   10.10.20.176
-ssh host-key-verification none
-authgroup labadmin
-device-type cli ned-id cisco-ios-cli-6.44
-device-type cli protocol telnet
+authgroup default
 state admin-state unlocked
-trace raw
-!
-! removed nexus 
-!
+ssh host-key-verification none
+device-type cli ned-id cisco-ios-cli-6.42
+address 127.0.0.1 port 10024
+top
 devices device edge-firewall01
-address   10.10.20.171
+address 127.0.0.1 port 10028
+device-type cli ned-id cisco-asa-cli-6.7
 ssh host-key-verification none
-authgroup labadmin
-device-type cli ned-id cisco-asa-cli-6.8
-device-type cli protocol telnet
 state admin-state unlocked
-trace raw
-!
-devices device edge-sw01
-address   10.10.20.172
-ssh host-key-verification none
-authgroup labadmin
-device-type cli ned-id cisco-ios-cli-6.44
-device-type cli protocol telnet
-state admin-state unlocked
-trace raw
-!
+authgroup default
+top
 devices device internet-rtr01
-address   10.10.20.181
+device-type cli ned-id cisco-ios-cli-6.42
 ssh host-key-verification none
-authgroup labadmin
-device-type cli ned-id cisco-ios-cli-6.44
-device-type cli protocol telnet
 state admin-state unlocked
-trace raw
-!
+authgroup default
+address 127.0.0.1 port 10025
 commit
 devices device-group IOS-DEVICES
 device-name internet-rtr01
@@ -113,6 +77,7 @@ device-group ASA-DEVICES
 device-group IOS-DEVICES
 device-group XR-DEVICES
 commit
+end
 
 
 end
@@ -208,8 +173,6 @@ interface Loopback 1337
 description "Placeholder Loopback"
 
 
-
-exit
 top
 show configuration
 show configuration | display xml
@@ -234,7 +197,7 @@ internet-rtr01(config-if)
 
 devices template SET-DNS-SERVER
 ! IOS TEMPLATE
-ned-id cisco-ios-cli-6.44
+ned-id cisco-ios-cli-6.42
 config
 ip name-server name-server-list 208.67.222.222
 ip name-server name-server-list 208.67.220.220
@@ -243,7 +206,7 @@ exit
 exit
 
 ! ASA TEMPLATE
-ned-id cisco-asa-cli-6.8
+ned-id cisco-asa-cli-6.7
 config
 dns domain-lookup mgmt
 dns server-group DefaultDNS
@@ -251,7 +214,7 @@ name-server 208.67.220.220
 name-server 208.67.222.222
 
 ! IOS-XR TEMPLATE
-ned-id cisco-iosxr-cli-7.20
+ned-id cisco-iosxr-cli-7.18
 config
 domain name-server 208.67.222.222
 exit
@@ -275,11 +238,15 @@ show configuration
 
 ## Service template - templates with variables
 
+cd $HOME/nso-run/packages/
 ncs-make-package --service-skeleton template  snmp-servers
 
 
 ## only demo first one
 
+ncs_cli -C -u admin
+
+conf
 devices device internet-rtr01 config
 snmp-server community VARIABLE-TO-BE RO
 commit dry-run outformat xml
@@ -294,6 +261,7 @@ commit dry-run outformat xml
       devices device core-rtr01 config
       snmp-server community VARIABLE-TO-BE RO
 
+! Go to editor
 
 <snmp-server xmlns="urn:ios">
   <community>
@@ -319,7 +287,7 @@ commit dry-run outformat xml
   </community>
 </snmp-server>
 
-cd /home/developer/nso-instance/packages/snmp-servers/src
+cd $HOME/nso-run/packages/snmp-servers/src
 make
 ncs_cli -C -u admin
 packages reload
@@ -341,6 +309,8 @@ snmp-servers 7th-instance device internet-rtr01
 commit dry-run outformat native
 top
 
+end
+no
 
 
 ## change template to have yang
