@@ -1,0 +1,16 @@
+# Created by: admin
+# Date: 2020-09-28 17:56:34
+# Via: cli
+# Type: delta
+# Label: 
+# Comment: 
+# No: 10090
+# TransactionId: 191
+# Hostname: vagrant
+
+line {
+    vty 0 4 {
+        delete:
+        login;
+    }
+ }

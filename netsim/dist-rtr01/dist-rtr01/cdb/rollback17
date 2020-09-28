@@ -1,0 +1,24 @@
+# Created by: admin
+# Date: 2020-09-28 17:56:34
+# Via: cli
+# Type: delta
+# Label: 
+# Comment: 
+# No: 10082
+# TransactionId: 175
+# Hostname: vagrant
+
+interface {
+    GigabitEthernet 6 {
+        ip {
+            address {
+                primary {
+                    delete:
+                    mask 255.255.255.252;
+                    delete:
+                    address 172.16.252.17;
+                }
+             }
+         }
+     }
+ }

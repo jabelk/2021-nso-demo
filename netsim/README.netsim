@@ -1,0 +1,38 @@
+
+This is a netsim project directory. The directory has been generated
+through the invocation of
+
+/home/vagrant/nso-install/bin/ncs-netsim create-device /home/vagrant/nso-install/packages/neds/cisco-ios-cli-6.42 edge-sw01
+
+/home/vagrant/nso-install/bin/ncs-netsim add-device /home/vagrant/nso-install/packages/neds/cisco-ios-cli-6.42 dist-rtr01
+
+/home/vagrant/nso-install/bin/ncs-netsim add-device /home/vagrant/nso-install/packages/neds/cisco-ios-cli-6.42 dist-rtr02
+
+/home/vagrant/nso-install/bin/ncs-netsim add-device /home/vagrant/nso-install/packages/neds/cisco-ios-cli-6.42 internet-rtr01
+
+/home/vagrant/nso-install/bin/ncs-netsim add-device /home/vagrant/nso-install/packages/neds/cisco-iosxr-cli-7.18 core-rtr01
+
+/home/vagrant/nso-install/bin/ncs-netsim add-device /home/vagrant/nso-install/packages/neds/cisco-iosxr-cli-7.18 core-rtr02
+
+/home/vagrant/nso-install/bin/ncs-netsim add-device /home/vagrant/nso-install/packages/neds/cisco-asa-cli-6.7 edge-firewall01
+
+This netsim project manages a set of emulated devices. Each device
+is emulated by ConfD. The devices are:
+
+ncs-netsim list for  /home/vagrant/netsim
+
+name=edge-sw01 netconf=12022 snmp=11022 ipc=5010 cli=10022 dir=/home/vagrant/netsim/edge-sw01/edge-sw01 
+name=dist-rtr01 netconf=12023 snmp=11023 ipc=5011 cli=10023 dir=/home/vagrant/netsim/dist-rtr01/dist-rtr01 
+name=dist-rtr02 netconf=12024 snmp=11024 ipc=5012 cli=10024 dir=/home/vagrant/netsim/dist-rtr02/dist-rtr02 
+name=internet-rtr01 netconf=12025 snmp=11025 ipc=5013 cli=10025 dir=/home/vagrant/netsim/internet-rtr01/internet-rtr01 
+name=core-rtr01 netconf=12026 snmp=11026 ipc=5014 cli=10026 dir=/home/vagrant/netsim/core-rtr01/core-rtr01 
+name=core-rtr02 netconf=12027 snmp=11027 ipc=5015 cli=10027 dir=/home/vagrant/netsim/core-rtr02/core-rtr02 
+name=edge-firewall01 netconf=12028 snmp=11028 ipc=5016 cli=10028 dir=/home/vagrant/netsim/edge-firewall01/edge-firewall01 
+
+Run ncs-netsim help for available commands to control this
+emulated network
+
+There exists directories for each device below here, the logs
+as well as start/stop/cli/status scripts for each device reside in
+each corresponding directory
+

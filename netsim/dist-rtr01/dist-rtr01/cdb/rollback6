@@ -1,0 +1,16 @@
+# Created by: admin
+# Date: 2020-09-28 17:56:34
+# Via: cli
+# Type: delta
+# Label: 
+# Comment: 
+# No: 10093
+# TransactionId: 197
+# Hostname: vagrant
+
+logging {
+    buffered {
+        delete:
+        severity-level debugging;
+    }
+ }

@@ -1,0 +1,551 @@
+28-Sep-2020::17:58:26.869 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.877 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = not_found
+28-Sep-2020::17:58:26.877 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.877 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.878 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = not_found
+28-Sep-2020::17:58:26.878 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.878 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.878 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = not_found
+28-Sep-2020::17:58:26.878 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.879 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.879 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = 172.16.102.0
+28-Sep-2020::17:58:26.879 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.880 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.881 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = not_found
+28-Sep-2020::17:58:26.881 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.881 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.881 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = not_found
+28-Sep-2020::17:58:26.881 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.881 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.882 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = 172.16.102.0
+28-Sep-2020::17:58:26.882 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.882 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.882 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = not_found
+28-Sep-2020::17:58:26.882 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.882 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.883 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = 172.16.102.0
+28-Sep-2020::17:58:26.883 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.883 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.883 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = not_found
+28-Sep-2020::17:58:26.883 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.884 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.884 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = not_found
+28-Sep-2020::17:58:26.884 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.884 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.885 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = 172.16.102.0
+28-Sep-2020::17:58:26.885 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.885 evaluating: /object/network[name='INSIDE-DEV']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.885 get_elem(/object/network[name='INSIDE-DEV']/subnet/address) = 172.16.102.0
+28-Sep-2020::17:58:26.885 result: /object/network[name='INSIDE-DEV']/subnet/mask: true
+28-Sep-2020::17:58:26.894 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.894 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = not_found
+28-Sep-2020::17:58:26.894 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.894 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.895 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = not_found
+28-Sep-2020::17:58:26.895 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.895 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.895 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = not_found
+28-Sep-2020::17:58:26.895 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.895 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.896 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = 172.16.105.0
+28-Sep-2020::17:58:26.896 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.897 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.898 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = not_found
+28-Sep-2020::17:58:26.898 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.898 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.898 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = not_found
+28-Sep-2020::17:58:26.898 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.899 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.899 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = 172.16.105.0
+28-Sep-2020::17:58:26.899 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.899 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.899 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = not_found
+28-Sep-2020::17:58:26.899 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.900 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.900 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = 172.16.105.0
+28-Sep-2020::17:58:26.900 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.900 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.900 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = not_found
+28-Sep-2020::17:58:26.900 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.901 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.901 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = not_found
+28-Sep-2020::17:58:26.901 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.902 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.902 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = 172.16.105.0
+28-Sep-2020::17:58:26.902 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.902 evaluating: /object/network[name='INSIDE-IOT']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.902 get_elem(/object/network[name='INSIDE-IOT']/subnet/address) = 172.16.105.0
+28-Sep-2020::17:58:26.902 result: /object/network[name='INSIDE-IOT']/subnet/mask: true
+28-Sep-2020::17:58:26.911 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.912 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = not_found
+28-Sep-2020::17:58:26.912 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.912 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.912 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = not_found
+28-Sep-2020::17:58:26.912 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.912 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.913 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = not_found
+28-Sep-2020::17:58:26.913 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.913 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.913 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = 172.16.101.0
+28-Sep-2020::17:58:26.913 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.915 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.916 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = not_found
+28-Sep-2020::17:58:26.916 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.916 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.916 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = not_found
+28-Sep-2020::17:58:26.917 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.917 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.917 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = 172.16.101.0
+28-Sep-2020::17:58:26.917 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.917 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.918 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = not_found
+28-Sep-2020::17:58:26.918 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.918 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.918 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = 172.16.101.0
+28-Sep-2020::17:58:26.918 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.918 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.919 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = not_found
+28-Sep-2020::17:58:26.919 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.920 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.920 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = not_found
+28-Sep-2020::17:58:26.920 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.920 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.921 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = 172.16.101.0
+28-Sep-2020::17:58:26.921 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.921 evaluating: /object/network[name='INSIDE-PROD']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.921 get_elem(/object/network[name='INSIDE-PROD']/subnet/address) = 172.16.101.0
+28-Sep-2020::17:58:26.921 result: /object/network[name='INSIDE-PROD']/subnet/mask: true
+28-Sep-2020::17:58:26.931 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.932 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = not_found
+28-Sep-2020::17:58:26.932 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.932 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.932 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = not_found
+28-Sep-2020::17:58:26.932 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.932 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.933 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = not_found
+28-Sep-2020::17:58:26.933 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.933 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.933 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = 172.16.104.0
+28-Sep-2020::17:58:26.933 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.934 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.935 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = not_found
+28-Sep-2020::17:58:26.935 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.935 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.935 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = not_found
+28-Sep-2020::17:58:26.935 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.936 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.936 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = 172.16.104.0
+28-Sep-2020::17:58:26.936 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.936 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.936 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = not_found
+28-Sep-2020::17:58:26.936 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.937 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.937 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = 172.16.104.0
+28-Sep-2020::17:58:26.937 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.937 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.937 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = not_found
+28-Sep-2020::17:58:26.937 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.938 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.938 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = not_found
+28-Sep-2020::17:58:26.938 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.938 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.939 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = 172.16.104.0
+28-Sep-2020::17:58:26.939 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.939 evaluating: /object/network[name='INSIDE-SECURITY']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.939 get_elem(/object/network[name='INSIDE-SECURITY']/subnet/address) = 172.16.104.0
+28-Sep-2020::17:58:26.939 result: /object/network[name='INSIDE-SECURITY']/subnet/mask: true
+28-Sep-2020::17:58:26.947 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.948 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = not_found
+28-Sep-2020::17:58:26.948 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.948 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.948 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = not_found
+28-Sep-2020::17:58:26.949 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.949 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.949 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = not_found
+28-Sep-2020::17:58:26.949 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.950 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.950 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = 172.16.103.0
+28-Sep-2020::17:58:26.950 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.951 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.951 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = not_found
+28-Sep-2020::17:58:26.951 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.952 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.952 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = not_found
+28-Sep-2020::17:58:26.952 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.952 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.952 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = 172.16.103.0
+28-Sep-2020::17:58:26.952 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.953 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.953 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = not_found
+28-Sep-2020::17:58:26.953 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.953 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.953 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = 172.16.103.0
+28-Sep-2020::17:58:26.953 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.954 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.954 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = not_found
+28-Sep-2020::17:58:26.954 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.954 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.955 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = not_found
+28-Sep-2020::17:58:26.955 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.955 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.955 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = 172.16.103.0
+28-Sep-2020::17:58:26.956 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.956 evaluating: /object/network[name='INSIDE-TEST']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.956 get_elem(/object/network[name='INSIDE-TEST']/subnet/address) = 172.16.103.0
+28-Sep-2020::17:58:26.956 result: /object/network[name='INSIDE-TEST']/subnet/mask: true
+28-Sep-2020::17:58:26.965 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.965 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = not_found
+28-Sep-2020::17:58:26.965 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:26.965 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.966 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = not_found
+28-Sep-2020::17:58:26.966 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:26.966 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.966 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = not_found
+28-Sep-2020::17:58:26.966 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:26.966 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.967 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = 172.31.252.0
+28-Sep-2020::17:58:26.967 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:26.968 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.968 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = not_found
+28-Sep-2020::17:58:26.968 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:26.969 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.969 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = not_found
+28-Sep-2020::17:58:26.969 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:26.969 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.970 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = 172.31.252.0
+28-Sep-2020::17:58:26.970 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:26.970 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.970 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = not_found
+28-Sep-2020::17:58:26.970 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:26.970 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.971 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = 172.31.252.0
+28-Sep-2020::17:58:26.971 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:26.971 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.971 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = not_found
+28-Sep-2020::17:58:26.971 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:26.972 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.972 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = not_found
+28-Sep-2020::17:58:26.972 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:26.973 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.973 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = 172.31.252.0
+28-Sep-2020::17:58:26.973 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:26.973 evaluating: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: not(contains(../address, ':'))
+28-Sep-2020::17:58:26.973 get_elem(/object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/address) = 172.31.252.0
+28-Sep-2020::17:58:26.974 result: /object/network[name='OUTSIDE-PUBLIC-IP-NETWORK']/subnet/mask: true
+28-Sep-2020::17:58:27.017 evaluating: /access-list/access-list-id[id='global_access']/rule[id='remark Allow Ping']/level: ../log
+28-Sep-2020::17:58:27.017 exists(/access-list/access-list-id[id='global_access']/rule[id='remark Allow Ping']/log) = false
+28-Sep-2020::17:58:27.017 result: /access-list/access-list-id[id='global_access']/rule[id='remark Allow Ping']/level: false
+28-Sep-2020::17:58:27.018 evaluating: /access-list/access-list-id[id='global_access']/rule[id='remark Allow Ping']/interval: ../log
+28-Sep-2020::17:58:27.018 exists(/access-list/access-list-id[id='global_access']/rule[id='remark Allow Ping']/log) = false
+28-Sep-2020::17:58:27.018 result: /access-list/access-list-id[id='global_access']/rule[id='remark Allow Ping']/interval: false
+28-Sep-2020::17:58:27.019 evaluating: /access-list/access-list-id[id='global_access']/rule[id='remark Allow Ping']/level: ../log
+28-Sep-2020::17:58:27.019 exists(/access-list/access-list-id[id='global_access']/rule[id='remark Allow Ping']/log) = false
+28-Sep-2020::17:58:27.019 result: /access-list/access-list-id[id='global_access']/rule[id='remark Allow Ping']/level: false
+28-Sep-2020::17:58:27.020 evaluating: /access-list/access-list-id[id='global_access']/rule[id='remark Allow Ping']/interval: ../log
+28-Sep-2020::17:58:27.020 exists(/access-list/access-list-id[id='global_access']/rule[id='remark Allow Ping']/log) = false
+28-Sep-2020::17:58:27.020 result: /access-list/access-list-id[id='global_access']/rule[id='remark Allow Ping']/interval: false
+28-Sep-2020::17:58:27.024 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: ../log
+28-Sep-2020::17:58:27.024 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = false
+28-Sep-2020::17:58:27.024 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: false
+28-Sep-2020::17:58:27.024 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/interval: ../log
+28-Sep-2020::17:58:27.025 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = false
+28-Sep-2020::17:58:27.025 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/interval: false
+28-Sep-2020::17:58:27.025 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: ../log
+28-Sep-2020::17:58:27.025 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = false
+28-Sep-2020::17:58:27.025 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: false
+28-Sep-2020::17:58:27.026 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: ../log
+28-Sep-2020::17:58:27.026 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = true
+28-Sep-2020::17:58:27.026 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: true
+28-Sep-2020::17:58:27.026 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: ../log
+28-Sep-2020::17:58:27.027 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = true
+28-Sep-2020::17:58:27.027 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: true
+28-Sep-2020::17:58:27.027 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: ../log
+28-Sep-2020::17:58:27.027 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = true
+28-Sep-2020::17:58:27.027 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: true
+28-Sep-2020::17:58:27.028 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: ../log
+28-Sep-2020::17:58:27.028 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = false
+28-Sep-2020::17:58:27.028 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: false
+28-Sep-2020::17:58:27.029 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/interval: ../log
+28-Sep-2020::17:58:27.029 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = false
+28-Sep-2020::17:58:27.029 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/interval: false
+28-Sep-2020::17:58:27.029 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: ../log
+28-Sep-2020::17:58:27.030 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = true
+28-Sep-2020::17:58:27.030 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: true
+28-Sep-2020::17:58:27.030 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: ../log
+28-Sep-2020::17:58:27.030 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = true
+28-Sep-2020::17:58:27.030 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: true
+28-Sep-2020::17:58:27.030 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: ../log
+28-Sep-2020::17:58:27.030 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = false
+28-Sep-2020::17:58:27.031 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: false
+28-Sep-2020::17:58:27.031 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/interval: ../log
+28-Sep-2020::17:58:27.031 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = false
+28-Sep-2020::17:58:27.031 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/interval: false
+28-Sep-2020::17:58:27.032 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: ../log
+28-Sep-2020::17:58:27.032 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = true
+28-Sep-2020::17:58:27.032 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: true
+28-Sep-2020::17:58:27.032 evaluating: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: ../log
+28-Sep-2020::17:58:27.032 exists(/access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/log) = true
+28-Sep-2020::17:58:27.032 result: /access-list/access-list-id[id='global_access']/rule[id='extended permit icmp any4 any4']/level: true
+28-Sep-2020::17:58:27.037 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: ../log
+28-Sep-2020::17:58:27.037 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = false
+28-Sep-2020::17:58:27.037 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: false
+28-Sep-2020::17:58:27.038 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/interval: ../log
+28-Sep-2020::17:58:27.038 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = false
+28-Sep-2020::17:58:27.038 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/interval: false
+28-Sep-2020::17:58:27.038 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: ../log
+28-Sep-2020::17:58:27.038 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = false
+28-Sep-2020::17:58:27.038 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: false
+28-Sep-2020::17:58:27.039 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: ../log
+28-Sep-2020::17:58:27.039 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = true
+28-Sep-2020::17:58:27.039 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: true
+28-Sep-2020::17:58:27.040 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: ../log
+28-Sep-2020::17:58:27.040 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = true
+28-Sep-2020::17:58:27.040 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: true
+28-Sep-2020::17:58:27.040 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: ../log
+28-Sep-2020::17:58:27.040 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = true
+28-Sep-2020::17:58:27.040 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: true
+28-Sep-2020::17:58:27.041 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: ../log
+28-Sep-2020::17:58:27.042 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = false
+28-Sep-2020::17:58:27.042 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: false
+28-Sep-2020::17:58:27.042 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/interval: ../log
+28-Sep-2020::17:58:27.042 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = false
+28-Sep-2020::17:58:27.042 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/interval: false
+28-Sep-2020::17:58:27.042 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: ../log
+28-Sep-2020::17:58:27.043 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = true
+28-Sep-2020::17:58:27.043 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: true
+28-Sep-2020::17:58:27.043 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: ../log
+28-Sep-2020::17:58:27.043 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = true
+28-Sep-2020::17:58:27.043 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: true
+28-Sep-2020::17:58:27.044 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: ../log
+28-Sep-2020::17:58:27.044 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = false
+28-Sep-2020::17:58:27.044 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: false
+28-Sep-2020::17:58:27.044 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/interval: ../log
+28-Sep-2020::17:58:27.045 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = false
+28-Sep-2020::17:58:27.045 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/interval: false
+28-Sep-2020::17:58:27.045 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: ../log
+28-Sep-2020::17:58:27.045 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = true
+28-Sep-2020::17:58:27.045 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: true
+28-Sep-2020::17:58:27.045 evaluating: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: ../log
+28-Sep-2020::17:58:27.046 exists(/access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/log) = true
+28-Sep-2020::17:58:27.046 result: /access-list/access-list-id[id='inside_access_in']/rule[id='extended permit ip object-group INSIDE-NETWORKS any4']/level: true
+28-Sep-2020::17:58:27.065 evaluating: /class-map[name='inspection_default']/protocol: ../type = 'inspect'
+28-Sep-2020::17:58:27.065 get_elem(/class-map[name='inspection_default']/type) = not_found
+28-Sep-2020::17:58:27.065 result: /class-map[name='inspection_default']/protocol: false
+28-Sep-2020::17:58:27.065 evaluating: /class-map[name='inspection_default']/prematch: not(../type = 'management')
+28-Sep-2020::17:58:27.066 get_elem(/class-map[name='inspection_default']/type) = not_found
+28-Sep-2020::17:58:27.066 result: /class-map[name='inspection_default']/prematch: true
+28-Sep-2020::17:58:27.066 evaluating: /class-map[name='inspection_default']/protocol: ../type = 'inspect'
+28-Sep-2020::17:58:27.066 get_elem(/class-map[name='inspection_default']/type) = not_found
+28-Sep-2020::17:58:27.066 result: /class-map[name='inspection_default']/protocol: false
+28-Sep-2020::17:58:27.066 evaluating: /class-map[name='inspection_default']/prematch: not(../type = 'management')
+28-Sep-2020::17:58:27.067 get_elem(/class-map[name='inspection_default']/type) = not_found
+28-Sep-2020::17:58:27.067 result: /class-map[name='inspection_default']/prematch: true
+28-Sep-2020::17:58:27.078 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.079 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.079 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.079 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.079 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.079 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.141 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.141 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.141 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.142 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.142 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.142 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.143 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.143 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.143 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.143 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.144 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.144 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.144 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.144 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.144 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.144 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.145 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.145 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.145 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.145 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.145 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.146 evaluating: /policy-map[name='migrated_dns_map_1']/protocol: ../type
+28-Sep-2020::17:58:27.146 get_elem(/policy-map[name='migrated_dns_map_1']/type) = not_found
+28-Sep-2020::17:58:27.147 result: /policy-map[name='migrated_dns_map_1']/protocol: false
+28-Sep-2020::17:58:27.147 evaluating: /policy-map[name='migrated_dns_map_1']/protocol: ../type
+28-Sep-2020::17:58:27.147 get_elem(/policy-map[name='migrated_dns_map_1']/type) = inspect
+28-Sep-2020::17:58:27.147 result: /policy-map[name='migrated_dns_map_1']/protocol: true
+28-Sep-2020::17:58:27.147 evaluating: /policy-map[name='migrated_dns_map_1']/protocol: ../type
+28-Sep-2020::17:58:27.147 get_elem(/policy-map[name='migrated_dns_map_1']/type) = inspect
+28-Sep-2020::17:58:27.148 result: /policy-map[name='migrated_dns_map_1']/protocol: true
+28-Sep-2020::17:58:27.148 evaluating: /policy-map[name='migrated_dns_map_1']/protocol: ../type
+28-Sep-2020::17:58:27.148 get_elem(/policy-map[name='migrated_dns_map_1']/type) = not_found
+28-Sep-2020::17:58:27.148 result: /policy-map[name='migrated_dns_map_1']/protocol: false
+28-Sep-2020::17:58:27.148 evaluating: /policy-map[name='migrated_dns_map_1']/protocol: ../type
+28-Sep-2020::17:58:27.149 get_elem(/policy-map[name='migrated_dns_map_1']/type) = inspect
+28-Sep-2020::17:58:27.149 result: /policy-map[name='migrated_dns_map_1']/protocol: true
+28-Sep-2020::17:58:27.149 evaluating: /policy-map[name='migrated_dns_map_1']/protocol: ../type
+28-Sep-2020::17:58:27.149 get_elem(/policy-map[name='migrated_dns_map_1']/type) = inspect
+28-Sep-2020::17:58:27.149 result: /policy-map[name='migrated_dns_map_1']/protocol: true
+28-Sep-2020::17:58:27.170 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.170 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.170 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.171 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.171 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.171 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.171 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.172 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.172 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.172 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.172 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.172 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.172 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.173 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.173 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.173 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.173 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.173 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.173 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.173 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.174 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.175 evaluating: /policy-map[name='migrated_dns_map_2']/protocol: ../type
+28-Sep-2020::17:58:27.175 get_elem(/policy-map[name='migrated_dns_map_2']/type) = not_found
+28-Sep-2020::17:58:27.175 result: /policy-map[name='migrated_dns_map_2']/protocol: false
+28-Sep-2020::17:58:27.175 evaluating: /policy-map[name='migrated_dns_map_2']/protocol: ../type
+28-Sep-2020::17:58:27.175 get_elem(/policy-map[name='migrated_dns_map_2']/type) = inspect
+28-Sep-2020::17:58:27.175 result: /policy-map[name='migrated_dns_map_2']/protocol: true
+28-Sep-2020::17:58:27.176 evaluating: /policy-map[name='migrated_dns_map_2']/protocol: ../type
+28-Sep-2020::17:58:27.176 get_elem(/policy-map[name='migrated_dns_map_2']/type) = inspect
+28-Sep-2020::17:58:27.176 result: /policy-map[name='migrated_dns_map_2']/protocol: true
+28-Sep-2020::17:58:27.176 evaluating: /policy-map[name='migrated_dns_map_2']/protocol: ../type
+28-Sep-2020::17:58:27.177 get_elem(/policy-map[name='migrated_dns_map_2']/type) = not_found
+28-Sep-2020::17:58:27.177 result: /policy-map[name='migrated_dns_map_2']/protocol: false
+28-Sep-2020::17:58:27.177 evaluating: /policy-map[name='migrated_dns_map_2']/protocol: ../type
+28-Sep-2020::17:58:27.177 get_elem(/policy-map[name='migrated_dns_map_2']/type) = inspect
+28-Sep-2020::17:58:27.177 result: /policy-map[name='migrated_dns_map_2']/protocol: true
+28-Sep-2020::17:58:27.177 evaluating: /policy-map[name='migrated_dns_map_2']/protocol: ../type
+28-Sep-2020::17:58:27.177 get_elem(/policy-map[name='migrated_dns_map_2']/type) = inspect
+28-Sep-2020::17:58:27.177 result: /policy-map[name='migrated_dns_map_2']/protocol: true
+28-Sep-2020::17:58:27.194 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.194 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.194 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.195 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.195 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.195 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.195 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.196 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.196 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.196 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.196 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.196 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.196 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.197 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.197 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.197 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.197 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.197 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.197 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.197 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.197 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.199 evaluating: /policy-map[name='migrated_dns_map_3']/protocol: ../type
+28-Sep-2020::17:58:27.199 get_elem(/policy-map[name='migrated_dns_map_3']/type) = not_found
+28-Sep-2020::17:58:27.199 result: /policy-map[name='migrated_dns_map_3']/protocol: false
+28-Sep-2020::17:58:27.199 evaluating: /policy-map[name='migrated_dns_map_3']/protocol: ../type
+28-Sep-2020::17:58:27.200 get_elem(/policy-map[name='migrated_dns_map_3']/type) = inspect
+28-Sep-2020::17:58:27.200 result: /policy-map[name='migrated_dns_map_3']/protocol: true
+28-Sep-2020::17:58:27.200 evaluating: /policy-map[name='migrated_dns_map_3']/protocol: ../type
+28-Sep-2020::17:58:27.200 get_elem(/policy-map[name='migrated_dns_map_3']/type) = inspect
+28-Sep-2020::17:58:27.200 result: /policy-map[name='migrated_dns_map_3']/protocol: true
+28-Sep-2020::17:58:27.201 evaluating: /policy-map[name='migrated_dns_map_3']/protocol: ../type
+28-Sep-2020::17:58:27.201 get_elem(/policy-map[name='migrated_dns_map_3']/type) = not_found
+28-Sep-2020::17:58:27.201 result: /policy-map[name='migrated_dns_map_3']/protocol: false
+28-Sep-2020::17:58:27.201 evaluating: /policy-map[name='migrated_dns_map_3']/protocol: ../type
+28-Sep-2020::17:58:27.201 get_elem(/policy-map[name='migrated_dns_map_3']/type) = inspect
+28-Sep-2020::17:58:27.201 result: /policy-map[name='migrated_dns_map_3']/protocol: true
+28-Sep-2020::17:58:27.201 evaluating: /policy-map[name='migrated_dns_map_3']/protocol: ../type
+28-Sep-2020::17:58:27.202 get_elem(/policy-map[name='migrated_dns_map_3']/type) = inspect
+28-Sep-2020::17:58:27.202 result: /policy-map[name='migrated_dns_map_3']/protocol: true
+28-Sep-2020::17:58:27.218 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.219 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.219 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.219 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.220 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.220 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.221 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.221 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.221 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.222 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.222 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.222 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.222 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.222 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.223 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.223 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.223 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.223 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.223 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.223 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.223 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.224 evaluating: /policy-map[name='migrated_dns_map_4']/protocol: ../type
+28-Sep-2020::17:58:27.225 get_elem(/policy-map[name='migrated_dns_map_4']/type) = not_found
+28-Sep-2020::17:58:27.225 result: /policy-map[name='migrated_dns_map_4']/protocol: false
+28-Sep-2020::17:58:27.225 evaluating: /policy-map[name='migrated_dns_map_4']/protocol: ../type
+28-Sep-2020::17:58:27.225 get_elem(/policy-map[name='migrated_dns_map_4']/type) = inspect
+28-Sep-2020::17:58:27.225 result: /policy-map[name='migrated_dns_map_4']/protocol: true
+28-Sep-2020::17:58:27.226 evaluating: /policy-map[name='migrated_dns_map_4']/protocol: ../type
+28-Sep-2020::17:58:27.226 get_elem(/policy-map[name='migrated_dns_map_4']/type) = inspect
+28-Sep-2020::17:58:27.226 result: /policy-map[name='migrated_dns_map_4']/protocol: true
+28-Sep-2020::17:58:27.228 evaluating: /policy-map[name='migrated_dns_map_4']/protocol: ../type
+28-Sep-2020::17:58:27.229 get_elem(/policy-map[name='migrated_dns_map_4']/type) = not_found
+28-Sep-2020::17:58:27.229 result: /policy-map[name='migrated_dns_map_4']/protocol: false
+28-Sep-2020::17:58:27.229 evaluating: /policy-map[name='migrated_dns_map_4']/protocol: ../type
+28-Sep-2020::17:58:27.229 get_elem(/policy-map[name='migrated_dns_map_4']/type) = inspect
+28-Sep-2020::17:58:27.229 result: /policy-map[name='migrated_dns_map_4']/protocol: true
+28-Sep-2020::17:58:27.230 evaluating: /policy-map[name='migrated_dns_map_4']/protocol: ../type
+28-Sep-2020::17:58:27.230 get_elem(/policy-map[name='migrated_dns_map_4']/type) = inspect
+28-Sep-2020::17:58:27.230 result: /policy-map[name='migrated_dns_map_4']/protocol: true
+28-Sep-2020::17:58:27.247 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.248 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.248 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.248 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.248 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.249 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.249 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.249 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.249 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.249 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.250 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.250 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.250 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.250 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.250 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.250 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.250 get_elem(/policy-map[name='global_policy']/type) = inspect
+28-Sep-2020::17:58:27.250 result: /policy-map[name='global_policy']/protocol: true
+28-Sep-2020::17:58:27.250 evaluating: /policy-map[name='global_policy']/protocol: ../type
+28-Sep-2020::17:58:27.251 get_elem(/policy-map[name='global_policy']/type) = not_found
+28-Sep-2020::17:58:27.251 result: /policy-map[name='global_policy']/protocol: false
+28-Sep-2020::17:58:27.252 evaluating: /policy-map[name='preset_dns_map']/protocol: ../type
+28-Sep-2020::17:58:27.252 get_elem(/policy-map[name='preset_dns_map']/type) = not_found
+28-Sep-2020::17:58:27.252 result: /policy-map[name='preset_dns_map']/protocol: false
+28-Sep-2020::17:58:27.253 evaluating: /policy-map[name='preset_dns_map']/protocol: ../type
+28-Sep-2020::17:58:27.253 get_elem(/policy-map[name='preset_dns_map']/type) = inspect
+28-Sep-2020::17:58:27.253 result: /policy-map[name='preset_dns_map']/protocol: true
+28-Sep-2020::17:58:27.253 evaluating: /policy-map[name='preset_dns_map']/protocol: ../type
+28-Sep-2020::17:58:27.253 get_elem(/policy-map[name='preset_dns_map']/type) = inspect
+28-Sep-2020::17:58:27.253 result: /policy-map[name='preset_dns_map']/protocol: true
+28-Sep-2020::17:58:27.254 evaluating: /policy-map[name='preset_dns_map']/protocol: ../type
+28-Sep-2020::17:58:27.254 get_elem(/policy-map[name='preset_dns_map']/type) = not_found
+28-Sep-2020::17:58:27.254 result: /policy-map[name='preset_dns_map']/protocol: false
+28-Sep-2020::17:58:27.254 evaluating: /policy-map[name='preset_dns_map']/protocol: ../type
+28-Sep-2020::17:58:27.254 get_elem(/policy-map[name='preset_dns_map']/type) = inspect
+28-Sep-2020::17:58:27.255 result: /policy-map[name='preset_dns_map']/protocol: true
+28-Sep-2020::17:58:27.255 evaluating: /policy-map[name='preset_dns_map']/protocol: ../type
+28-Sep-2020::17:58:27.255 get_elem(/policy-map[name='preset_dns_map']/type) = inspect
+28-Sep-2020::17:58:27.255 result: /policy-map[name='preset_dns_map']/protocol: true
+28-Sep-2020::17:58:27.284 exists(/aaa-server[name='LOCAL']) = false
+28-Sep-2020::17:58:27.285 get_next(/aaa-server) = false
+28-Sep-2020::17:58:27.405 maapi_get_next(): evaluating: .[translate(name,'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')=$x0]
+28-Sep-2020::17:58:27.406 get_next(/dns/domain-lookup) = false
+28-Sep-2020::17:58:27.406 maapi_get_next(): done
+28-Sep-2020::17:58:27.411 maapi_get_next(): evaluating: .[translate(name,'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')=$x0]
+28-Sep-2020::17:58:27.411 get_next(/dns/server-group) = false
+28-Sep-2020::17:58:27.411 maapi_get_next(): done

@@ -1,0 +1,14 @@
+# Created by: admin
+# Date: 2020-09-28 17:56:34
+# Via: cli
+# Type: delta
+# Label: 
+# Comment: 
+# No: 10077
+# TransactionId: 165
+# Hostname: vagrant
+
+interface {
+    delete:
+    GigabitEthernet 6;
+}

@@ -1,0 +1,16 @@
+# Created by: admin
+# Date: 2020-09-28 17:56:34
+# Via: cli
+# Type: delta
+# Label: 
+# Comment: 
+# No: 10098
+# TransactionId: 207
+# Hostname: vagrant
+
+router {
+    ospf 1 {
+        delete:
+        network 172.16.252.0 0.0.3.255;
+    }
+ }

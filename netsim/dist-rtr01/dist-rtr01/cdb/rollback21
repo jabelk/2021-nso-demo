@@ -1,0 +1,16 @@
+# Created by: admin
+# Date: 2020-09-28 17:56:34
+# Via: cli
+# Type: delta
+# Label: 
+# Comment: 
+# No: 10078
+# TransactionId: 167
+# Hostname: vagrant
+
+interface {
+    GigabitEthernet 6 {
+        delete:
+        description "L3 Link to dist-rtr02";
+    }
+ }

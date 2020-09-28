@@ -1,0 +1,16 @@
+# Created by: admin
+# Date: 2020-09-28 17:56:34
+# Via: cli
+# Type: delta
+# Label: 
+# Comment: 
+# No: 10072
+# TransactionId: 155
+# Hostname: vagrant
+
+interface {
+    GigabitEthernet 5 {
+        delete:
+        description "L3 Link to dist-sw02";
+    }
+ }

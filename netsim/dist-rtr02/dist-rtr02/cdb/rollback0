@@ -1,0 +1,187 @@
+# Created by: admin
+# Date: 2020-09-28 17:57:19
+# Via: cli
+# Type: delta
+# Label: 
+# Comment: 
+# No: 10000
+# TransactionId: 12
+# Hostname: vagrant
+
+line {
+    delete:
+    vty 0 4;
+    delete:
+    console 0;
+}
+interface {
+    delete:
+    GigabitEthernet 1;
+    delete:
+    GigabitEthernet 2;
+    delete:
+    GigabitEthernet 3;
+    delete:
+    GigabitEthernet 4;
+    delete:
+    GigabitEthernet 5;
+    delete:
+    GigabitEthernet 6;
+    Loopback 0 {
+        delete:
+        description to;
+        delete:
+        shutdown;
+        ip {
+            address {
+                primary {
+                    mask 255.0.0.0;
+                    address 127.0.0.1;
+                }
+            }
+            no-address {
+                delete:
+                address false;
+            }
+        }
+    }
+}
+enable {
+    password {
+        delete:
+        secret cisco;
+    }
+}
+router {
+    delete:
+    ospf 1;
+}
+logging {
+    monitor {
+        delete:
+        severity-level debugging;
+    }
+    buffered {
+        delete:
+        severity-level debugging;
+    }
+}
+platform {
+    punt-keepalive {
+        delete:
+        disable-kernel-core false;
+    }
+    delete:
+    console serial;
+    qfp {
+        utilization {
+            monitor {
+                delete:
+                load 80;
+            }
+        }
+    }
+}
+delete:
+hostname dist-rtr02;
+service {
+    delete:
+    timestamps;
+    delete:
+    call-home;
+}
+delete:
+username cisco;
+crypto {
+    pki {
+        delete:
+        trustpoint SLA-TrustPoint;
+        delete:
+        trustpoint TP-self-signed-1718897783;
+        certificate {
+            delete:
+            chain SLA-TrustPoint;
+            delete:
+            chain TP-self-signed-1718897783;
+        }
+    }
+}
+memory {
+    free {
+        low-watermark {
+            delete:
+            processor 80526;
+        }
+    }
+}
+vrf {
+    delete:
+    definition Mgmt-intf;
+}
+delete:
+control-plane;
+ip {
+    http {
+        secure-server false;
+    }
+    ssh {
+        server {
+            algorithm {
+                delete:
+                authentication password;
+            }
+        }
+    }
+    forward-protocol {
+        delete:
+        nd;
+    }
+    domain {
+        lookup-conf {
+            delete:
+            lookup false;
+        }
+        delete:
+        name virl.info;
+    }
+    route {
+        delete:
+        vrf Mgmt-intf;
+    }
+}
+spanning-tree {
+    extend {
+        delete:
+        system-id;
+    }
+}
+login {
+    on-success {
+        delete:
+        log;
+    }
+}
+delete:
+version 16.11;
+subscriber {
+    delete:
+    templating true;
+}
+multilink {
+    delete:
+    bundle-name authenticated;
+}
+delete:
+redundancy;
+diagnostic {
+    bootup {
+        delete:
+        level minimal;
+    }
+}
+call-home {
+    delete:
+    profile CiscoTAC-1;
+    delete:
+    contact-email-addr sch-smart-licensing@cisco.com;
+}

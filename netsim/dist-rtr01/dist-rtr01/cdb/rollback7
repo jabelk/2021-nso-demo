@@ -1,0 +1,18 @@
+# Created by: admin
+# Date: 2020-09-28 17:56:34
+# Via: cli
+# Type: delta
+# Label: 
+# Comment: 
+# No: 10092
+# TransactionId: 195
+# Hostname: vagrant
+
+line {
+    vty 0 4 {
+        transport {
+            delete:
+            input ssh telnet;
+        }
+     }
+ }

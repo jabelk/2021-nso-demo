@@ -1,0 +1,294 @@
+# Created by: admin
+# Date: 2020-09-28 17:58:29
+# Via: cli
+# Type: delta
+# Label: 
+# Comment: 
+# No: 10000
+# TransactionId: 11
+# Hostname: vagrant
+
+delete:
+policy-map global_policy;
+delete:
+policy-map migrated_dns_map_1;
+delete:
+policy-map migrated_dns_map_2;
+delete:
+policy-map migrated_dns_map_3;
+delete:
+policy-map migrated_dns_map_4;
+delete:
+policy-map preset_dns_map;
+same-security-traffic {
+    permit {
+        delete:
+        inter-interface;
+    }
+}
+delete:
+class-map inspection_default;
+failover-conf {
+    delete:
+    failover false;
+}
+interface {
+    delete:
+    Management 0/0;
+    delete:
+    GigabitEthernet 0/0;
+    delete:
+    GigabitEthernet 0/1;
+}
+delete:
+dynamic-access-policy-record DfltAccessPolicy;
+pager {
+    delete:
+    lines 23;
+}
+enable {
+    password {
+        delete:
+        pbkdf2;
+        delete:
+        word $sha512$5000$DKF03TKJaScbQmA+nntceg==$ExY05K81+NLVoxRtkcwzZg==;
+    }
+}
+delete:
+service-policy global_policy;
+telnet {
+    delete:
+    timeout 15;
+    delete:
+    allowed-access 0.0.0.0;
+}
+router {
+    delete:
+    ospf 1;
+}
+monitor-interface {
+    delete:
+    service-module false;
+}
+logging {
+    delete:
+    enable;
+    delete:
+    asdm informational;
+}
+dns {
+    delete:
+    domain-lookup mgmt;
+    delete:
+    server-group DefaultDNS;
+}
+timeout {
+    delete:
+    conn 1:00:00;
+    uauth {
+        delete:
+        value 0:05:00;
+        delete:
+        absolute;
+    }
+    delete:
+    sctp 0:02:00;
+    delete:
+    sip-provisional-media 0:02:00;
+    delete:
+    conn-holddown 0:00:15;
+    delete:
+    sip 0:30:00;
+    delete:
+    h323 0:05:00;
+    delete:
+    xlate 3:00:00;
+    delete:
+    floating-conn 0:00:00;
+    delete:
+    mgcp-pat 0:05:00;
+    delete:
+    udp 0:02:00;
+    delete:
+    sip-disconnect 0:02:00;
+    delete:
+    pat-xlate 0:00:30;
+    delete:
+    sip_media 0:02:00;
+    delete:
+    mgcp 0:05:00;
+    delete:
+    sunrpc 0:10:00;
+    delete:
+    h225 1:00:00;
+    delete:
+    tcp-proxy-reassembly 0:01:00;
+    delete:
+    sip-invite 0:03:00;
+    delete:
+    icmp 0:00:02;
+    igp {
+        delete:
+        stale-route 0:01:10;
+    }
+    delete:
+    half-closed 0:10:00;
+}
+http {
+    server {
+        delete:
+        enable;
+    }
+    delete:
+    address 0.0.0.0;
+}
+delete:
+names;
+delete:
+hostname edge-firewall01;
+delete:
+username cisco;
+object {
+    delete:
+    network INSIDE-DEV;
+    delete:
+    network INSIDE-IOT;
+    delete:
+    network INSIDE-PROD;
+    delete:
+    network INSIDE-SECURITY;
+    delete:
+    network INSIDE-TEST;
+    delete:
+    network OUTSIDE-PUBLIC-IP-NETWORK;
+}
+delete:
+passwd;
+user-identity {
+    delete:
+    default-domain LOCAL;
+}
+crypto {
+    ipsec {
+        security-association {
+            delete:
+            pmtu-aging infinite;
+        }
+    }
+    ca {
+        delete:
+        trustpoint _SmartCallHome_ServerCA;
+        certificate {
+            delete:
+            chain _SmartCallHome_ServerCA;
+        }
+        trustpool {
+            delete:
+            policy;
+        }
+    }
+}
+ssh {
+    delete:
+    timeout 5;
+    delete:
+    allowed-access 0.0.0.0 0.0.0.0;
+    delete:
+    stricthostkeycheck;
+}
+ftp {
+    delete:
+    mode passive;
+}
+icmp {
+    unreachable {
+        delete:
+        burst-size 1;
+        delete:
+        rate-limit 1;
+    }
+}
+asdm {
+    history {
+        delete:
+        enable false;
+    }
+}
+delete:
+mtu inside;
+delete:
+mtu mgmt;
+delete:
+mtu outside;
+delete:
+prompt hostname context;
+object-group {
+    delete:
+    network INSIDE-NETWORKS;
+}
+delete:
+threat-detection basic-threat;
+access-group {
+    delete:
+    global-list global;
+    delete:
+    interface-list in inside;
+}
+access-list {
+    delete:
+    access-list-id global_access;
+    delete:
+    access-list-id inside_access_in;
+}
+license {
+    smart {
+        throughput {
+            delete:
+            level 1G;
+        }
+        feature {
+            tier {
+                delete:
+                standard;
+            }
+        }
+    }
+}
+console {
+    delete:
+    timeout 0;
+}
+delete:
+route mgmt 0.0.0.0 0.0.0.0 10.10.20.254;
+delete:
+route outside 172.31.0.0 255.255.0.0 172.31.252.1;
+aaa {
+    authentication {
+        ssh {
+            console {
+                delete:
+                LOCAL;
+            }
+        }
+        login-history-duration {
+            delete:
+            login-history;
+        }
+    }
+}
+management-access {
+    delete:
+    nameif mgmt;
+}
+arp {
+    delete:
+    permit-nonconnected false;
+    delete:
+    rate-limit 8192;
+}
+call-home {
+    delete:
+    profile CiscoTAC-1;
+    delete:
+    profile License;
+}

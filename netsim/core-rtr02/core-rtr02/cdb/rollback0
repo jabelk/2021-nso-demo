@@ -1,0 +1,126 @@
+# Created by: admin
+# Date: 2020-09-28 17:55:23
+# Via: cli
+# Type: delta
+# Label: 
+# Comment: 
+# No: 10000
+# TransactionId: 12
+# Hostname: vagrant
+
+line {
+    default {
+        exec-timeout {
+            delete:
+            minutes 0;
+            delete:
+            seconds 0;
+        }
+        delete:
+        absolute-timeout 0;
+        session-timeout {
+            delete:
+            minutes 0;
+        }
+    }
+    delete:
+    template vty;
+    console {
+        exec-timeout {
+            delete:
+            minutes 0;
+            delete:
+            seconds 0;
+        }
+        delete:
+        absolute-timeout 0;
+        session-timeout {
+            delete:
+            minutes 0;
+        }
+    }
+}
+interface {
+    delete:
+    GigabitEthernet 0/0/0/0;
+    delete:
+    GigabitEthernet 0/0/0/1;
+    delete:
+    GigabitEthernet 0/0/0/2;
+    delete:
+    GigabitEthernet 0/0/0/3;
+    delete:
+    Loopback 0;
+    delete:
+    MgmtEth 0/0/CPU0/0;
+}
+admin {
+    delete:
+    username cisco;
+}
+telnet {
+    delete:
+    vrf Mgmt-intf;
+    delete:
+    vrf default;
+}
+router {
+    static {
+        address-family {
+            ipv4 {
+                unicast {
+                    delete:
+                    routes-ip 0.0.0.0/0 172.16.253.4;
+                }
+            }
+        }
+        delete:
+        vrf Mgmt-intf;
+    }
+    delete:
+    ospf 1;
+}
+logging {
+    delete:
+    console disable;
+}
+vty-pool {
+    default {
+        delete:
+        first-vty 0;
+        delete:
+        last-vty 50;
+    }
+}
+delete:
+hostname core-rtr02;
+service {
+    delete:
+    timestamps;
+}
+vrf {
+    delete:
+    vrf-list Mgmt-intf;
+}
+ssh {
+    server {
+        delete:
+        v2;
+    }
+}
+control-plane {
+    management-plane {
+        inband {
+            delete:
+            interface all;
+        }
+    }
+}
+domain {
+    lookup {
+        delete:
+        disable;
+    }
+    delete:
+    name virl.info;
+}
