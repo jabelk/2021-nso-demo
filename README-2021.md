@@ -6,7 +6,7 @@
 - Service templates
 - Using the Python and RESTCONF API
 
-Services and Data Modeling
+! Services and Data Modeling CREATE SERVICE
 
 ncs_cli
 devices sync-from
@@ -33,7 +33,7 @@ https://github.com/jabelk/svi_verify_example/blob/master/src/yang/svi_verify_exa
 Python
 https://github.com/NSO-developer/selftest/blob/master/python/selftest.py
 
-
+! VERIFY WITH PYTHON
 
 show running-config svi_verify_example first-instance | display xpath
 conf
