@@ -8,6 +8,8 @@
 
 ! Services and Data Modeling CREATE SERVICE
 
+```
+
 ncs_cli
 devices sync-from
 conf
@@ -20,6 +22,8 @@ exit
 commit dry-run outformat native
 commit
 end
+
+```
 
 Config We want:
 https://github.com/jabelk/svi_verify_example 
@@ -34,6 +38,8 @@ Python
 https://github.com/NSO-developer/selftest/blob/master/python/selftest.py
 
 ! VERIFY WITH PYTHON
+```
+
 
 show running-config svi_verify_example first-instance | display xpath
 conf
@@ -48,6 +54,8 @@ commit
 selftest svi-tests execute
 end
 show svi_verify_example selftest-result
+
+```
 
 POSTMAN
 
